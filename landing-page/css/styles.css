@@ -1,14 +1,99 @@
-.grid {
-    width: 90%;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;800&display=swap');
+
+/* make logo smaller */
+
+.logo img {
+    height: 75px;
+    width: 75px;
 }
 
-@media (min-width: 700px) {
+/*make h1 and h2 bigger and add font styles*/
+
+ h1 {
+     font-size: 90px;
+     text-align: left;
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ h2 {
+     font-size: 30px;
+     text-align: left;
+     font-family: 'Montserrat', sans-serif;
+     margin: 5px;
+ }
+/* add rounded border to main */
+
+main {
+    border: black;
+    border-style: outset;
+    border-radius: 20px;
+    margin: 55px;
+    padding: 25px;
+}
+
+/*font changes to text contained in <main>*/
+
+ h3 {
+     font-size: 45px;
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ main p {
+     font-size: 25px;
+     font-family: 'Montserrat', sans-serif;;
+ }
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/*add border and colour to listed items */
+
+li {
+    background-color: #ccc;
+    border-style: inset;
+    margin: 8px;
+    padding: 6px;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+.check {
+    font-size: 25px;
+}
+
+.button {
+    background-color: seagreen;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+
+
+footer {
+    background-color: yellow;
+    padding: 50px;
+}
+
+/*change grid layout for tablet settings*/
+
+@media (min-width: 850px) {
     .grid {
-        width: 700px;
-        display: flex;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         grid-template-areas:
         "logo"
         "header"
@@ -18,16 +103,19 @@
     }
 
     .logo { grid-area: logo; }
-    header { grid-area: header; }
+    .header { grid-area: header; }
     section { grid-area: section; }
     main { grid-area: main; }
     footer { grid-area: footer; }
 
 }
 
-@media (min-width: 900px) {
+/*change grid layout for desktop settings */
+
+@media (min-width: 1000px) {
     .grid {
-        width: 900px;
+        width: 100%;
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas: 
@@ -36,3 +124,4 @@
         "footer footer footer"
     }
 }
+
