@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="navbar"></div>
+                    <ul class="btn btn-warning mb-4 text-light nav navbar-nav">
+                        <li class="active"><a href="#">Intro</a></li>
+                        <li><a href='#'>How it works(basics)<span class="caret"></span></a>
+                        </li>
+                        <li><a href="#">Breakpoints</a></li>
+                        <li><a href="#">Alignment</a></li>
+                        <li><a href="#">Offset</a></li>
+                        <li><a href="#">Reordering</a></li>
+                    </ul>  
+                </div>
+            </div>
+        </div>   
+    </div>     
+    <div class="container mb-5">
+        <div class="row">
+            <div class="text-dark bg-light border border-dark col-md-3">Intro</div>
+            <div class="text-light bg-info border border-danger col-md-9">Bootstrap is a mobile-first grid type structure used in HTML, CSS, and JS. It uses a responsive grid system along with built in components for layout and styling</div>
+        </div>        
+    </div> 
+    <div class="container offset-md-1 mb-5">
+        <div class="row">
+            <div class="text-dark bg-light border border-dark col-md-3">How it works (basics)</div>
+            <div class="text-light bg-info border border-danger col-md-9">Bootstrap uses a layout in which container classes are used as the basic layout.setup.
+            Inside a container wouldbe a tag with a class of row, and inside there is where we 
+            would set up our column layout. All content is placed specifically inside the columns.</div>
+        </div>    
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="text-dark bg-light border border-dark col-md-3">Breakpoints</div>
+            <div class="text-light bg-info border border-danger col-md-9">There are breakpoint abbreviations; sm, md, lg, xl. Using these abbreviations by simply
+            writing them after the 'col' element (ex: div class="col-lg-3")(this is saying when the
+            page reaches a breakpoint at size large, the column will take up 3 spaces out of a total of 12 which
+            will help us set up some breakpoints, with each abbreviation containing their own size (in pixels). 
+            </div>
+        </div>    
+    </div>
+    <div class="container offset-md-1 mb-5">
+        <div class="row">
+            <div class="text-dark bg-light border border-dark col-md-3">Alignment</div>
+            <div class="text-light bg-info border border-danger col-md-9">Vertical
+            We can use 'align-items' with the values of 'start', 'end', 'center', 'baseline', and 'stretch'.
+            Horizontal
+            We can use 'justify-content' with the same values.
+            </div>
+        </div>    
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="text-dark bg-light border border-dark col-md-3">Offset</div>
+            <div class="text-light bg-info border border-danger col-md-9">'offset-' followed by a number from 1-11 can be used to move the columns to the right for
+            a desired alignment/layout.
+            </div>
+        </div>    
+    </div>    
+    <div class="container offset-md-1 mb-5">
+        <div class="row">
+            <div class="text-dark bg-light border border-dark col-md-3">Reordering</div>
+            <div class="text-light bg-info border border-danger col-md-9">We can use the '.order' class to order the items in order prefered. 
+            Values that can be used include '-first', 'last'. and any number from '1-12'.
+            </div>
+        </div>    
+    </div>        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
