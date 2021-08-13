@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+/** clear margin and padding on page, add background color**/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(167, 146, 199);
+}
+
+/** nav bar styling **/
+
+.nav {
+    margin: 2rem;
+}
+.nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: rgb(230, 198, 139);
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    font-family:'Recursive', sans-serif;
+    font-size: 40px;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    margin: 2rem;
+  }
+
+.nav a {
+    text-decoration: none;
+    color: rgb(241, 239, 229);
+}
+
+.nav a:hover {
+    background-color: darkblue;
+    transition: .6s background-color;
+}
+
+/** home page styling**/
+
+.bigimg img {
+    height: 200px;
+    width: 260px;
+}
+
+.link {
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    color: #000;
+}
+
+a.link:hover {
+    color: crimson;
+    transition: .4s color;
+}
+
+/** Photography page styling **/
+
+.pg2 {
+    background-color: rgba(170, 79, 79, 0.911);
+}
+
+
+/** Graphic art page styling **/
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-top: 3rem;
+}
+
+.pg3 {
+    background-color: rgb(103, 128, 185);
+}
+
+/** paragraph text styling **/
+
+p {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+
+
+
+/** tablet size styling**/
+
+@media (min-width: 650px) {
+    .nav ul {
+        width: 900px;
+    }
+    .nav li {
+        display: inline-block;
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+      }
+}
+
+/** desktop size styling **/
+
+@media (min-width: 980px) {
+    .nav ul {
+        width: 100%;
+    }
+}
